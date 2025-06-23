@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PotroFolio Walidhani Faturrohman </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="100x100" href="image/w.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Nunito", sans-serif;
+            font-size: 1.2rem;
+            scrollbar: none;
+        }
+
+        nav {
+            background-color: #474747;
+            color: white;
+            padding: 10px 0;
+            top: 0;
+            position: sticky;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(255, 255, 255, 0);
+
+        }
+
+        .menu ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu ul li a {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            transition: background-color 0.3s;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #FFFF;
+        }
+
+        .menu ul li a:hover {
+            background-color: #ffffff;
+            color: #000000;
+            transform: scale(1.2);
+            transition: transform 0.3s;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .menu-button {
+            display: none;
+            font-size: 28px;
+            color: white;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .menu-button {
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 15px;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                background-color: #474747;
+                flex-direction: column;
+                gap: 10px;
+                padding: 15px;
+                border-radius: 10px;
+                z-index: 999;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .nav-menu ul {
+                flex-direction: column;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+            .gambar img {
+                max-width: 100% !important;
+                height: auto;
+                padding-left: 0 !important;
+            }
+
+            .gambar2 img {
+                max-width: 100% !important;
+                height: auto;
+                padding-left: 0 !important;
+            }
+        }
+
+        .gambar img {
+            padding-left: 190px;
+        }
+
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+            align-items: center;
+            position: relative;
+        }
+
+        .wrapper img {
+            height: 50px;
+        }
+
+        nav div {
+            flex: 1;
+        }
+
+        header {
+            height: 100vh;
+            background-image: url('image/b3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .conntent1 {
+            max-width: 800px;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: "Nunito", sans-serif;
+        }
+
+        footer {
+            background-color: #474747;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-family: "Nunito", sans-serif;
+            font-size: 16px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="wrapper">
+            <div><img src="image/w.png" alt="" srcset=""></div>
+            <button class="menu-button" id="menu-toggle">☰</button>
+            <div class="menu nav-menu" id="nav-menu">
+                <ul ">
+                    <li><a href=" #home" ">Beranda</a></li>
+                    <li><a href=" #about" ">Tentang</a></li>
+                    <li><a href=" #projects" ">Proyek</a></li>
+                    <li><a href=" #skills" ">Keahlian</a></li>
+                    <li><a href=" #education" ">Pendidikan</a></li>
+                    <li><a href=" #experience" ">Pengalaman</a></li>
+                    <li><a href=" #certifications" ">Sertifikasi</a></li>
+                    <li><a href=" #profil" ">Profil</a></li>
+
+                </ul>
+            </div>
+        </div>
+        </div>
+
+
+    </nav>
+
+
+    <header>
+
+        <div class=" conntent1" id="home">
+                    <h1 style="font-size: 3rem; font-weight: 700;">WALIDHANI FATURROHMAN</h1>
+                    <p style="font-size: 1rem; font-weight: 400;">Lulusan SMK NEGERI SITURAJA</p>
+
+
+
+                    </header>
+
+                    <section id="about" style="padding: 50px 0; background-color: #393E46; color: white;">
+                        <div class="wrapper">
+                            <div class="">
+                                <h2
+                                    style="text-align: center; font-size: 2rem; font-weight: 700; align-items: center; justify-content: center;">
+                                    Tentang Saya <i class="fa-solid fa-circle-info"></i> </h2>
+                                <p style="max-width: 800px; margin: auto; text-align: center; font-size: 1.2rem;">
+                                    Halo! Saya Walidhani Faturrohman, lulusan SMK Negeri Situraja jurusan Rekayasa
+                                    Perangkat Lunak. Saya
+                                    memiliki minat yang besar di bidang teknologi, khususnya dalam pengembangan web
+                                    menggunakan HTML,
+                                    CSS,
+                                    dan PHP.
+                                    <br><br>
+                                    Selama mengikuti Praktik Kerja Lapangan (PKL) di Cyber Labs, saya terlibat dalam
+                                    proyek pembuatan
+                                    website testimoni makanan, yang membantu saya mengasah kemampuan dalam membuat
+                                    tampilan web yang
+                                    menarik
+                                    dan fungsional.
+                                    <br><br>
+                                    Saya adalah pribadi yang teliti, semangat belajar tinggi, dan senang mengeksplorasi
+                                    hal-hal baru di
+                                    dunia pemrograman. Saya percaya bahwa proses belajar tidak berhenti, dan saya selalu
+                                    terbuka untuk
+                                    mengembangkan diri melalui pengalaman baru maupun kerja sama tim.
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="projects"
+                        style="padding: 10px 0; background-color: #222831; color: white; justify-content: center; align-items: center;">
+                        <div class="wrapper" style="align-items: center; justify-content: center; ">
+
+
+                            <div
+                                style="display: flex; flex-direction: column; gap: 40px; margin-top: 40px; padding-left: 20px;">
+                                <div class="" style="text-align: center; margin-bottom: 40px; align-items: center;">
+                                    <h2
+                                        style="text-align: center; font-size: 2rem; font-weight: 700; margin-bottom: 20px;">
+                                        Proyek <i class="fa-solid fa-diagram-project"></i>
+                                    </h2>
+                                    <p style="max-width: 800px; margin: auto; font-size: 1.3rem; text-align: center;">
+                                        Berikut adalah beberapa proyek yang telah saya kerjakan selama belajar dan
+                                        praktik di bidang
+                                        pengembangan web. Proyek-proyek ini mencerminkan keterampilan saya dalam HTML,
+                                        CSS, dan PHP,
+                                        serta kemampuan saya dalam menciptakan tampilan web yang menarik dan fungsional:
+                                    </p>
+                                </div>
+
+                                <!-- Proyek 1 -->
+                                <div style="text-align: center;">
+                                    <h3 style="font-size: 1.5rem; font-weight: bold; padding-bottom: 20px;">Website
+                                        Testimoni Makanan
+                                    </h3>
+                                    <div class="gambar" style="display: flex;">
+                                        <img src="image/home tasty.png" alt="Website Testimoni Makanan"
+                                            style="max-width: 100%; height: auto;  margin: 20px 0;">
+                                    </div>
+                                    <p style="max-width: 700px; margin: auto; ">
+                                        Proyek ini melibatkan pembuatan website yang menampilkan testimoni dari pengguna
+                                        tentang
+                                        berbagai jenis makanan.
+                                    </p>
+                                </div>
+
+                                <!-- Proyek 2 -->
+                                <div style="text-align: center;">
+                                    <h3 style="font-size: 1.5rem; font-weight: bold;">Website Kasir</h3>
+                                    <div class="gambar2">
+                                        <img src="image/Cuplikan layar 2025-06-22 143706.png" alt="Website Kasir"
+                                            style="max-width: 730px; height: auto; padding-left: 0; margin: auto;"">
+                    <p style=" max-width: 700px; margin: auto; ">
+                    </div>
+                    Website kasir sederhana yang memungkinkan pengguna untuk menjelajahi produk, menambahkan dan
+                    menghapus produk, serta melakukan pembelian. 
+                    
+                    Proyek ini juga mencakup fitur untuk menghitung total harga pembelian dan memberikan ringkasan
+                    transaksi. Website ini dirancang untuk memudahkan pengguna dalam melakukan transaksi dan
+                    melacak riwayat pembelian mereka. 
+                    </p>
+                </div>
+
+                <!-- Proyek 3 -->
+                <div style=" text-align: center;">
+                                        <h3 style="font-size: 1.5rem; font-weight: bold;">Website Portofolio</h3>
+                                        <!-- <img src="image/portofolio.png" alt="Website Portofolio"
+                        style="width: 60%; border-radius: 10px; margin: 20px 0;"> -->
+                                        <p style="max-width: 700px; margin: auto;">
+                                            Portofolio pribadi saya yang menampilkan keterampilan dan pengalaman saya
+                                            dalam pengembangan
+                                            web.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                    </section>
+
+                    <section id="skills" style="padding: 50px 0; background-color: #393E46; color: rgb(255, 254, 254);">
+                        <div class="wrapper">
+                            <div class="">
+                                <h2 style="text-align: center; font-size: 2rem; font-weight: 700;">Keahlian <i
+                                        class="fa-solid fa-screwdriver-wrench"></i></h2>
+                                <p style="max-width: 800px; margin: auto; text-align: center; font-size: 1.2rem;">
+                                    Saya memiliki keahlian dalam pengembangan web menggunakan HTML, CSS, dan PHP. Saya
+                                    juga memiliki
+                                    pengetahuan dasar tentang JavaScript dan MySQL.
+                                </p>
+
+                                <ul
+                                    style=" list-style: none; padding: 0; text-align: center; display: flex; justify-content: center; gap: 20px;">
+                                    <li style="margin-bottom: 10px;"><i class="fa-brands fa-html5"
+                                            style="color: #ed6307; size: 50px;"></i>HTML</li>
+                                    <li style="margin-bottom: 10px;"><i class="fa-brands fa-css3"
+                                            style="color: #1af806; padding-left: 10px;"></i>CSS</li>
+                                    <li style="margin-bottom: 10px;"><i class="fa-brands fa-php"
+                                            style="color: #8800c7; padding-left: 10px;"></i>PHP</li>
+                                    <li style="margin-bottom: 10px;"><i class="fa-brands fa-js"
+                                            style="color: #eeff00; padding-left: 10px;"></i>JavaScript
+                                        (Dasar)</li>
+                                    <li style="margin-bottom: 10px;"><i class="fa-solid fa-database"
+                                            style="color: #ff0000; padding-left: 10px;"></i>MySQL
+                                        (Dasar)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="education" style="padding: 50px 0; background-color: #222831; color: white;">
+                        <div class="wrapper">
+                            <div class="">
+                                <h2 style="text-align: center; font-size: 2rem; font-weight: 700;">Pendidikan <i
+                                        class="fa-solid fa-graduation-cap"></i></h2>
+                                <p style="max-width: 800px; margin: auto; text-align: center; font-size: 1.2rem;">
+                                    Saya adalah lulusan SMK Negeri Situraja jurusan Rekayasa Perangkat Lunak. Selama di
+                                    sekolah, saya
+                                    belajar berbagai konsep dasar pemrograman dan pengembangan web.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="experience" style="padding: 50px 0; background-color: #393E46; color: white;">
+                        <div class="wrapper">
+                            <div class="">
+                                <h2 style="text-align: center; font-size: 2rem; font-weight: 700;">Pengalaman <i
+                                        class="fa-solid fa-briefcase"></i></h2>
+                                <p style="max-width: 800px; margin: auto; text-align: center; font-size: 1.2rem;">
+                                    Saya telah mengikuti Praktik Kerja Lapangan (PKL) di Cyber Labs, di mana saya
+                                    terlibat dalam proyek
+                                    pembuatan website testimoni makanan. Pengalaman ini membantu saya mengasah
+                                    keterampilan dalam
+                                    pengembangan web dan bekerja dalam tim.
+                                </p>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section id="certifications" style="padding: 50px 0; background-color: #222831; color: white;">
+                        <div class="wrapper">
+                            <div class="">
+                                <h2 style="text-align: center; font-size: 2rem; font-weight: 700;">Sertifikasi <i
+                                        class="fa-solid fa-certificate"></i></h2>
+                                <p style="max-width: 800px; margin: auto; text-align: center; font-size: 1.2rem;">
+                                    Saya telah menyelesaikan beberapa kursus online yang berkaitan dengan pengembangan
+                                    web, termasuk
+                                    HTML, CSS, dan PHP. Sertifikasi ini menunjukkan komitmen saya untuk terus belajar
+                                    dan mengembangkan
+                                    keterampilan saya di bidang ini. selain itu saya juga memiliki sertifikat dari SMK
+                                    Negeri Situraja
+                                    sebagai bukti kelulusan saya. dan juga sertifikat dari Cyber Labs sebagai bukti
+                                    Praktik Kerja Lapangan (PKL) yang telah saya lakukan. sertifikat ini mencakup
+                                    berbagai
+                                    keterampilan dan pengetahuan yang saya peroleh selama belajar di SMK Negeri Situraja
+                                    dan Cyber Labs.
+
+                                </p>
+                                <br><br>
+                                <p>
+                                    berikut adalah sertifikat yang telah saya peroleh:
+                                </p>
+                                <div class="gambar">
+
+                                    <a href="image/Walidhani Faturraohman-TTD.png" target="_blank"
+                                        style="color: white; text-decoration: none;">Sertifikat Cyber Labs </a>
+                                    <br>
+                                    <img src="image/Walidhani Faturrohman-TTD.png" alt="" srcset=""
+                                        style="width: 700px; height: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="profil" style="padding: 50px 0; background-color: #393E46; color: white;">
+                        <div class="wrapper">
+                            <div class="">
+                                <h2 style="text-align: center; font-size: 2rem; font-weight: 700;">Profil <i
+                                        class="fa-solid fa-user"></i></h2>
+                                <p style="max-width: 800px; margin: auto; text-align: center; font-size: 1.6rem;">
+                                    Nama: Walidhani Faturrohman<br>
+                                    Tanggal Lahir: 6 Januari 2007 <br>
+                                    Email: faturwali06@gmail.com <br>
+                                    Nomor Tlp: 0857-1735-1412 <br>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <footer>
+                        <div class="wrapper"
+                            style="text-align: center; padding: 20px; background-color: #474747; color: white;">
+                            <p>&copy; 2025 Walidhani Faturrohman. All rights reserved.</p>
+
+                        </div>
+                    </footer>
+                    <!-- Script di akhir agar elemen sudah dimuat -->
+                    <script>
+                        const toggle = document.getElementById("menu-toggle");
+                        const menu = document.getElementById("nav-menu");
+
+                        toggle.addEventListener("click", () => {
+                            menu.classList.toggle("active");
+                        });
+
+                        document.querySelectorAll("#nav-menu a").forEach(link => {
+                            link.addEventListener("click", () => {
+                                menu.classList.remove("active");
+                            });
+                        });
+                    </script>
+
+
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+                        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+                        crossorigin="anonymous"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+                        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+                        crossorigin="anonymous"></script>
+</body>
+
+</html>
