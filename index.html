@@ -11,6 +11,8 @@
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
@@ -242,7 +244,7 @@
                     <li><a href=" #profil" ">Profil</a></li>
                     <li><a href=" #kontak" ">Kontak</a></li>
                     <a href=" cv-walidhani.pdf" target="_blank"
-                    style="padding: 8px 16px; border: 1px solid #000000; border-radius: 5px; text-decoration: none; font-weight: bold; color: #000;">
+                    style="padding: 8px 16px; border: 2px solid #000000; border-radius: 5px; text-decoration: none; font-weight: bold; color: #000;">
                     Resume
                     </a>
 
@@ -373,7 +375,7 @@
                         </div>
                         <p style="color: #555; font-size: 0.95rem;">Portofolio pribadi saya yang
                             menampilkan keterampilan dan pengalaman saya dalam pengembangan web..</p>
-                        <a href="#" target="_blank"
+                        <a href="https://walidhani0701.github.io/Projek-portofolio/" target="_blank"
                             style="display: inline-block; margin-top: 15px; font-size: 1.2rem; color: #000;"><i
                                 class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
@@ -647,17 +649,18 @@
                     </div>
                 </div>
 
-                 <!-- Instagram-->
+                <!-- Instagram-->
                 <div style="border: 2px solid #000; border-radius: 10px; padding: 15px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;"
                     data-aos="fade-left" data-aos-duration="1000">
                     <i class="fa-brands fa-instagram" style="font-size: 1.5rem;"></i>
                     <div data-aos="fade-left" data-aos-duration="1000">
                         <strong data-aos="fade-left" data-aos-duration="1000"> Instagram</strong><br>
-                        <a href="https://www.instagram.com/fthr7_____?igsh=MXVrbnJ4YmFhYzcxZw==" style="color: #000; text-decoration: none;"
-                            data-aos="fade-up" data-aos-duration="1000">fthr7_____</a>
+                        <a href="https://www.instagram.com/fthr7_____?igsh=MXVrbnJ4YmFhYzcxZw=="
+                            style="color: #000; text-decoration: none;" data-aos="fade-up"
+                            data-aos-duration="1000">fthr7_____</a>
                     </div>
                 </div>
-                
+
                 <!-- Lokasi -->
                 <div style="border: 2px solid #000; border-radius: 10px; padding: 15px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;"
                     data-aos="fade-left" data-aos-duration="1000">
@@ -768,7 +771,7 @@
             const form = document.getElementById("formKontak");
 
             form.addEventListener("submit", function (e) {
-                e.preventDefault(); // cegah submit default
+                e.preventDefault(); // Cegah submit biasa
 
                 const formData = new FormData(form);
 
@@ -780,17 +783,33 @@
                     }
                 }).then(response => {
                     if (response.ok) {
-                        alert("Pesan berhasil dikirim!");
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Berhasil!',
+                            text: 'Pesan berhasil dikirim.',
+                            confirmButtonColor: '#3085d6'
+                        });
                         form.reset();
                     } else {
-                        alert("Gagal mengirim pesan. Silakan coba lagi.");
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Gagal!',
+                            text: 'Pesan tidak berhasil dikirim.',
+                            confirmButtonColor: '#d33'
+                        });
                     }
                 }).catch(error => {
-                    alert("Terjadi kesalahan. Silakan coba lagi.");
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops!',
+                        text: 'Terjadi kesalahan. Coba lagi nanti.',
+                        confirmButtonColor: '#d33'
+                    });
                 });
             });
         });
     </script>
+
 
 
     <!-- Script di akhir agar elemen sudah dimuat -->
